@@ -244,7 +244,7 @@ class CombatModule(object):
                             Utils.script_sleep()
         
         Utils.wait_update_screen()
-        map_region = Utils.find('maps/map_{}'.format(self.chapter_map), 0.99)
+        map_region = Utils.find('maps/map_{}'.format(self.chapter_map), 0.97)
         if map_region == None:
             Logger.log_error("Cannot find the specified map, please move to the world where it's located.")
         while map_region == None:
